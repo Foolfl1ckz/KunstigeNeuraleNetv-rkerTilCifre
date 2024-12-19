@@ -162,5 +162,5 @@ class netværk:
 
 if __name__== "__main__":
     training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
-    net = netværk([784, 50, 50, 50,10])
+    net = netværk([784, 1000,10])
     net.SGD(training_data, 30, 10, 0.1, test_data=test_data) 
